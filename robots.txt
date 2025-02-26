@@ -1,0 +1,15 @@
+# Allow all search engines to access everything
+User-agent: *
+Disallow:
+
+# Disallow specific directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Block a specific bot (e.g., BadBot)
+User-agent: BadBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://nooraldain.com/sitemap.xml
