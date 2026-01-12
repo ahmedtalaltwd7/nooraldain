@@ -73,7 +73,7 @@ const contractData = [
       <div
         class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
       >
-        <div class="mt-6 relative">  
+        <div class="mt-6 relative">
           <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
             Global Partnerships
           </h3>
@@ -92,21 +92,22 @@ const contractData = [
           <h3
             class="text-xl font-semibold text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
           >
-            Company Contracts
+            Company Contracts ({contractData.length})
           </h3>
           <ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-300">
-            <li>• IMC: Food & Refreshment for trainings</li>
-            <li>• IMC: Tires & Battery supply</li>
-            <li>• FMF: Food, Refreshment & Hall rental with tools</li>
-            <li>• FMF: Generator fuel supply</li>
-            <li>• FMF: Cleaning tools supply</li>
-            <li>• FMF: Hall rental completion certification</li>
-            <li>• IMC: Seeds & Training tools</li>
-            <li>• IMC: Tent installation with chairs</li>
-            <li>• FMF: Hall rental service for trainings</li>
-            <li>• FHI 360: 800 medical delivery kits</li>
-            <li>• FHI 360: 2000 medical delivery kits</li>
-            <li>• IOM: Food & Refreshment for Lahj & Taiz trainings</li>
+            {
+              contractData.map((contract, index) => (
+                <li class="flex items-start">
+                  <span class="text-blue-600 dark:text-blue-400 mr-2 font-semibold">
+                    •
+                  </span>
+                  <span>
+                    <span class="font-medium">{contract.partner}: </span>
+                    {contract.description}
+                  </span>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
