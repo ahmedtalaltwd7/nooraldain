@@ -1,5 +1,24 @@
 ---
 import Container from "./Container.astro";
+
+// Contract data for better maintainability
+const contractData = [
+  { partner: "IMC", description: "Food & Refreshment for trainings" },
+  { partner: "IMC", description: "Tires & Battery supply" },
+  { partner: "FMF", description: "Food, Refreshment & Hall rental with tools" },
+  { partner: "FMF", description: "Generator fuel supply" },
+  { partner: "FMF", description: "Cleaning tools supply" },
+  { partner: "FMF", description: "Hall rental completion certification" },
+  { partner: "IMC", description: "Seeds & Training tools" },
+  { partner: "IMC", description: "Tent installation with chairs" },
+  { partner: "FMF", description: "Hall rental service for trainings" },
+  { partner: "FHI 360", description: "800 medical delivery kits" },
+  { partner: "FHI 360", description: "2000 medical delivery kits" },
+  {
+    partner: "IOM",
+    description: "Food & Refreshment for Lahj & Taiz trainings",
+  },
+];
 ---
 
 <div id="features">
@@ -73,58 +92,24 @@ import Container from "./Container.astro";
           <h3
             class="text-xl font-semibold text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
           >
-            Additional Partnerships
+            Company Contracts
           </h3>
-          <ul
-            class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-300"
-            role="list"
-          >
-            <li
-              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors px-2 py-1 rounded"
-            >
-              <strong>FMF:</strong> Training refreshment & food in Aden, Taiz, Hadhramaut
-            </li>
-            <li
-              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors px-2 py-1 rounded"
-            >
-              <strong>IMC:</strong> Waste bins & cleaning tools supply
-            </li>
-            <li
-              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors px-2 py-1 rounded"
-            >
-              <strong>OXFA:</strong> Office curtains installation
-            </li>
-            <li
-              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors px-2 py-1 rounded"
-            >
-              <strong>Read Foundation:</strong> Solar systems for 2 schools in Lahj
-            </li>
-            <li
-              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors px-2 py-1 rounded"
-            >
-              <strong>International Medical Corps:</strong> Vehicle tires & batteries
-              supply
-            </li>
-            <li
-              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors px-2 py-1 rounded"
-            >
-              <strong>Training Support:</strong> 11-day hall rental, food, materials,
-              coordination
-            </li>
-            <li
-              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors px-2 py-1 rounded"
-            >
-              <strong>Chlorinator Training:</strong> Shabwah training materials, refreshment,
-              venue
-            </li>
-            <li
-              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors px-2 py-1 rounded"
-            >
-              <strong>Catering Services:</strong> Training meals in multiple locations
-            </li>
+          <ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-300">
+            <li>• IMC: Food & Refreshment for trainings</li>
+            <li>• IMC: Tires & Battery supply</li>
+            <li>• FMF: Food, Refreshment & Hall rental with tools</li>
+            <li>• FMF: Generator fuel supply</li>
+            <li>• FMF: Cleaning tools supply</li>
+            <li>• FMF: Hall rental completion certification</li>
+            <li>• IMC: Seeds & Training tools</li>
+            <li>• IMC: Tent installation with chairs</li>
+            <li>• FMF: Hall rental service for trainings</li>
+            <li>• FHI 360: 800 medical delivery kits</li>
+            <li>• FHI 360: 2000 medical delivery kits</li>
+            <li>• IOM: Food & Refreshment for Lahj & Taiz trainings</li>
           </ul>
         </div>
       </div>
-    </div></Container
-  >
+    </div>
+  </Container>
 </div>
