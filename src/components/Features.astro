@@ -1,41 +1,68 @@
 ---
-import Container from "./Container.astro"
-
+import Container from "./Container.astro";
 ---
 
 <div id="features">
   <Container>
-    <div class="mb-12 space-y-2 text-center">   
-      <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">Our Features</h2>      
+    <div class="mb-12 space-y-2 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">
+        Our Features
+      </h2>
       <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
-      •	Purchase Order with IMC for providing food & Refreshment for trainings.
-•	Purchase Order with IMC for Supplying Tires & Battery .
-•	Purchase Order with FMF for providing food & Refreshment & hall renting including tools for trainings.
-•	Purchase Order with FMF  for supplying fuel for generator.
-•	Purchase Order with FMF for supplying cleaning tools.
-•	Completion certificate with FMF for hall renting for trainings.
-•	 Purchase Order with IMC for supplying seeds & training tools. 
-•	Purchase Order with IMC of installation tents with chairs.
-•	Purchase Order with FMF for providing hall renting service for trainings. 
-•	Purchase Order with FHI 360 for supplying of 800 medical delivery kit.
-•	Purchase Order with FHI 360 for supplying of 2000 medical delivery kit.
-•	Purchase Order with IOM for providing Refreshment & Food for trainings in 2 areas "Lahj & Taiz". 
-
+        Implementation of various procurement and partnership projects with
+        international organizations to support community development
+        initiatives.
       </p>
     </div>
+
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-     
+      <!-- IMC Partnership Projects -->
+      <div
+        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
+      >
         <div class="mt-6 relative">
           <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
-            Feature 1
+            IMC Partnerships
           </h3>
-          <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-            Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
-          </p>
-          <a class="inline-block" href="#">
-            <span class="text-info dark:text-blue-300">Read more</span>
-          </a>
+          <ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-300">
+            <li>• Food & Refreshment for trainings</li>
+            <li>• Tires & Battery supply</li>
+            <li>• Seeds & Training tools</li>
+            <li>• Tent installation with chairs</li>
+          </ul>
         </div>
+      </div>
 
+      <!-- FMF Partnership Projects -->
+      <div
+        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
+      >
+        <div class="mt-6 relative">
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+            FMF Partnerships
+          </h3>
+          <ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-300">
+            <li>• Food, Refreshment & Hall rental for trainings</li>
+            <li>• Generator fuel supply</li>
+            <li>• Cleaning tools supply</li>
+            <li>• Hall rental completion certification</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- International Partnerships -->
+      <div
+        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
+      >
+        <div class="mt-6 relative">
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+            Global Partnerships
+          </h3>
+          <ul class="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-300">
+            <li>• FHI 360: 800 & 2000 medical delivery kits</li>
+            <li>• IOM: Food & Refreshment in Lahj & Taiz</li>
+          </ul>
+        </div>
+      </div>
+    </div></Container>
 </div>
