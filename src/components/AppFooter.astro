@@ -57,14 +57,19 @@ const currentYear = new Date().getFullYear();
 <footer class="py-20 md:py-40" role="contentinfo" aria-label="Footer">
   <Container>
     <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
-      <div class="flex flex-wrap items-center justify-between md:flex-nowrap">
+      <div
+        class="flex flex-col md:flex-row md:items-start md:justify-between md:space-x-8"
+      >
         <!-- Navigation Links Section -->
         <div
-          class="flex w-full justify-center space-x-12 text-gray-600 dark:text-gray-300 sm:w-7/12 md:justify-start"
+          class="flex flex-col md:flex-row md:space-x-12 text-gray-600 dark:text-gray-300"
         >
           <!-- Main Navigation -->
-          <nav aria-label="Footer navigation">
-            <ul class="list-inside list-disc space-y-8">
+          <nav aria-label="Footer navigation" class="mb-8 md:mb-0">
+            <h3 class="font-semibold text-gray-800 dark:text-white mb-4">
+              Navigation
+            </h3>
+            <ul class="space-y-3">
               {
                 navigationLinks.map((item) => (
                   <li>
@@ -84,8 +89,11 @@ const currentYear = new Date().getFullYear();
           </nav>
 
           <!-- Social Media Links -->
-          <nav aria-label="Social media links">
-            <ul role="list" class="space-y-8">
+          <nav aria-label="Social media links" class="mb-8 md:mb-0">
+            <h3 class="font-semibold text-gray-800 dark:text-white mb-4">
+              Follow Us
+            </h3>
+            <ul role="list" class="space-y-3">
               {
                 socialLinks.map((social) => (
                   <li>
@@ -93,7 +101,7 @@ const currentYear = new Date().getFullYear();
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="flex items-center space-x-3 transition hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      class="flex items-center space-x-2 transition hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                       aria-label={`Visit our ${social.name} page`}
                       data-element="social-link"
                       data-platform={social.name.toLowerCase()}
@@ -101,7 +109,7 @@ const currentYear = new Date().getFullYear();
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
-                        class="w-5 h-5"
+                        class="w-4 h-4"
                         viewBox="0 0 16 16"
                         aria-hidden="true"
                         focusable="false"
@@ -110,7 +118,7 @@ const currentYear = new Date().getFullYear();
                         <title>{social.name} icon</title>
                         <path d={social.icon} />
                       </svg>
-                      <span>{social.name}</span>
+                      <span class="text-sm">{social.name}</span>
                     </a>
                   </li>
                 ))
@@ -122,13 +130,13 @@ const currentYear = new Date().getFullYear();
                   href="https://patreon.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center space-x-3 transition hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  class="flex items-center space-x-2 transition hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   aria-label="Support us on Patreon"
                   data-element="social-link"
                   data-platform="patreon"
                 >
                   <img
-                    class="h-5 w-5"
+                    class="h-4 w-4"
                     width="32"
                     height="32"
                     src="https://c5.patreon.com/external/favicon/favicon.ico?v=69kMELnXkB"
@@ -138,7 +146,7 @@ const currentYear = new Date().getFullYear();
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"
                   />
                   <span style="display: none;">Patreon</span>
-                  <span>Patreon</span>
+                  <span class="text-sm">Patreon</span>
                 </a>
               </li>
             </ul>
@@ -146,9 +154,7 @@ const currentYear = new Date().getFullYear();
         </div>
 
         <!-- Footer Information Section -->
-        <div
-          class="m-auto mt-16 w-10/12 space-y-6 text-center sm:mt-auto sm:w-5/12 sm:text-left"
-        >
+        <div class="space-y-4 text-center md:text-left">
           <!-- Attribution -->
           <div class="block text-gray-500 dark:text-gray-400">
             Designed & Developed by
