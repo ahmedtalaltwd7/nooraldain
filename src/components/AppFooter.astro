@@ -82,67 +82,6 @@ const currentYear = new Date().getFullYear();
               }
             </ul>
           </nav>
-
-          <!-- Social Media Links -->
-          <nav aria-label="Social media links">
-            <ul role="list" class="space-y-8">
-              {
-                socialLinks.map((social) => (
-                  <li>
-                    <a
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="flex items-center space-x-3 transition hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                      aria-label={`Visit our ${social.name} page`}
-                      data-element="social-link"
-                      data-platform={social.name.toLowerCase()}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        class="w-5 h-5"
-                        viewBox="0 0 16 16"
-                        aria-hidden="true"
-                        focusable="false"
-                        role="img"
-                      >
-                        <title>{social.name} icon</title>
-                        <path d={social.icon} />
-                      </svg>
-                      <span>{social.name}</span>
-                    </a>
-                  </li>
-                ))
-              }
-
-              <!-- Patreon Link (external img) -->
-              <li>
-                <a
-                  href="https://patreon.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex items-center space-x-3 transition hover:text-primary focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                  aria-label="Support us on Patreon"
-                  data-element="social-link"
-                  data-platform="patreon"
-                >
-                  <img
-                    class="h-5 w-5"
-                    width="32"
-                    height="32"
-                    src="https://c5.patreon.com/external/favicon/favicon.ico?v=69kMELnXkB"
-                    alt="Patreon icon"
-                    loading="lazy"
-                    decoding="async"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"
-                  />
-                  <span style="display: none;">Patreon</span>
-                  <span>Patreon</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
         </div>
 
         <!-- Footer Information Section -->
